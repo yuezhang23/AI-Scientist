@@ -245,7 +245,7 @@ def get_response_from_llm(
         )
         content = response.choices[0].message.content
         new_msg_history = new_msg_history + [{"role": "assistant", "content": content}]
-    elif model in ["deepseek-reasoner"]:
+    elif model in ["deepseek-reasoner", "deepseek-v4-pro"]:
         new_msg_history = msg_history + [{"role": "user", "content": msg}]
         response = client.chat.completions.create(
             model=model,
