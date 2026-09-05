@@ -243,6 +243,7 @@ def get_response_from_llm(
             n=1,
             stop=None,
         )
+        print('deepseek used')
         content = response.choices[0].message.content
         new_msg_history = new_msg_history + [{"role": "assistant", "content": content}]
     elif model in ["deepseek-reasoner"]:
