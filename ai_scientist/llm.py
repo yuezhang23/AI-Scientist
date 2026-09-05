@@ -152,7 +152,7 @@ def get_response_from_llm(
 ):
     if msg_history is None:
         msg_history = []
-
+    print(f"using model: {model}")
     if "claude" in model:
         new_msg_history = msg_history + [
             {
