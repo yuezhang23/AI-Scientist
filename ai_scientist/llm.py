@@ -51,6 +51,7 @@ AVAILABLE_LLMS = [
     "deepseek-chat",
     "deepseek-coder",
     "deepseek-reasoner",
+    "deepseek-v4-pro",
     # Google Gemini models
     "gemini-1.5-flash",
     "gemini-1.5-pro",
